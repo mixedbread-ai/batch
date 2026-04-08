@@ -73,7 +73,7 @@ Below is a basic example of how to use the Batched API to process text data in b
 For more advanced usage, such as customizing batch size and timeout dynamically, the Batched API provides decorators that allow fine-grained control over the batching process.
 
 - **Batch Size**: You can specify the max. number of requests to group together in a single batch.
-- **Timeout**: The maximum time to wait for more requests before processing the batch.
+- **Timeout**: The time in milliseconds to sleep between batch generation attempts when the batch is not full.
 - **Small Batch Threshold**: The threshold to give more priority to smaller batches.
 - **Pad Token**: The token to use for padding when batching tensors, only for `@inference.dynamically` and `@aio.inference.dynamically`.
 
